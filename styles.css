@@ -1,0 +1,94 @@
+/* Universal Selector */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#idheading{
+    color:red;
+    background-color: yellow;
+    font-size:10px;
+}
+
+/* Having 2 selector same styles. */
+h3,.classheading{
+    color:aqua;
+    background-color: orange;
+    font-size: 20px;
+}
+
+/* .select{  Apart from this one */
+/* //Another way to target the specific element */
+span > p{ 
+    color: cornflowerblue;
+    background-color: brown;
+    font-size: 30px;
+}
+
+.container{
+    background-image: url('742550.jpg');
+    background-size: cover;
+    height: 100vh;
+    /* background-repeat: no-repeat; */
+    /* background-position: bottom; */
+    /* background-attachment: fixed; */
+    /* background: blue url('742550.jpg') cover; */
+}
+
+.blue{
+    height: 1000px;
+    width: 250px;
+    background-color: blue;
+    background-attachment: fixed;
+}
+
+.boxModel{
+    height: 250px;
+    width: 250px;
+    /* We can set margin and padding both using shorthand values and tricks */
+    /* 
+    margin: 10px 10px 10px 10px;
+    padding : 10px 10px 10px 10px;
+    - This is will set the margin for all the side to 10 px and we can give different size of margin for all the sides and same goes for padding as well.
+    margin: 10px 10px;
+    padding : 10px 10px;
+    - This will set the top-bottom and left-right pair of the margins and same for padding.
+    margin-top 
+    */
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: red url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkTQ8DFOgujidIRil33r2QnSZ2Y_ZHahrUlw&usqp=CAU') fixed no-repeat;
+}
+
+.box1{
+    background-color: red;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box2{
+    background-color: yellow;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.boxsize1{
+    background-color: green;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.boxsize2{
+    background-color: aqua;
+    color: black;
+    /* margin: 20px; */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    /* This is Box Sizing and this will allow us to have a child element specific height, width and and padding and border to be restrict to inside the parent div only. "This does not includes the margins" */
+}
