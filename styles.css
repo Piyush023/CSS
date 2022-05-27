@@ -1,7 +1,7 @@
 /* Universal Selector */
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 1px;
+    padding: 1px;
 }
 
 #idheading{
@@ -65,15 +65,25 @@ span > p{
 .box1{
     background-color: red;
     color: white;
-    margin: 10px;
-    padding: 10px;
+    display: inline-block;
+    /* Display: none - wil, remove the space too and also remove the element from the DOM too. We can achieve the same using the visibility property to hidden - But this will not remove the space */
+    /* 
+    Now we can also set the margin and padding and height and width while using the inline block element
+    */
+    /* margin: 10px; */
+    /* padding: 10px; */
 }
 
 .box2{
+    display: inline-block;
     background-color: yellow;
     color: black;
+    text-align: center;
     margin: 20px;
     padding: 20px;
+    width: 100px;
+    height: 100px;
+    font-family: 'Blaka', cursive;
 }
 
 .boxsize1{
